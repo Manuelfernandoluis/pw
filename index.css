@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body,html{
+    background-color: #5f2c82;
+    /*Vamos fazer com que o body tenha 100vh e 100vw*/
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Como usamos o main, então vamos fazer com que essa tag tenha 100 de altura e largura*/
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/*Vamos posicionar tradicionalmente com posições relativas*/
+
+section#login{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+overflow: hidden;
+    background-color: white;
+    /*Vamos fazer largura de celular, para a caixa de login*/
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px   rgba(0, 0, 0, 0.466);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease; /*Para ele dar uma suavizada durante a animação, ele não vai acelerar nem desacelerar na mesma velocidade*/
+}
+
+section#login>div#imagem{
+    background-image: url(login.jpg)  ;
+    /*Para a imagem aparecer dentro do formulario, temos que colocar a altura*/
+    height: 200px;
+    /*Ajuda a endereitar a imagem, ou o background-image de um elemento*/
+   background-size: cover;
+   /*O background-position permite que você manipule a posição de uma imagem*/ 
+   display: block;
+}
+
+section#login>div#formulario{
+    padding: 10px;
+    display: block;
+}
