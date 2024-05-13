@@ -16,9 +16,29 @@
 <div id="formulario">
     <h1>Login</h1>
     <p>Seja bem vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
-    <form action="login.php" method="post">
 
+    <form action="login.php" method="post">
+<div class="campo">
+    <label for="ilogin">Login</label>
+<!--autocomplete='email' tem a função de sugerir email, maxlength="30" ele esta informando que o limite do campo é 30-->
+ <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+
+</div>
+
+<div class="campo">
+
+    <label for="isenha">Senha</label>
+    <!--autocomplete='current-password' tem a função de sugerir palavras passe, minlength="8" no minimo é de 8 a 20 caractere-->
+ <input type="password"  name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+
+
+</div>
+
+<input type="submit" value="entrar">
+  <a href="esqueci.html">esqueci a senha</a>
    </form>
+
+
 </div>
         </section>
     </main>

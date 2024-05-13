@@ -54,3 +54,13 @@ section#login>div#formulario{
     padding: 10px;
     display: block;
 }
+
+div#formulario>h1{
+    /*O titulo estará alinhado no centro e embaixo vamos dar um afastamento de 10px*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario>p{
+    font-size: 0.8em;/*Vamos reduzir o tamanho dos paragrafos */
+}
